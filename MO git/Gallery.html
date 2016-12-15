@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="utf-8">
+		<meta name="description" content="McNulty Outdoors Inc. A professional landscaping company, since 1985, that services Manhattan, Queens, Brooklyn, and Western Nassau County." />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+		<script src="Javascript/html5shiv.js"></script>
+		<title>Gallery - McNulty Outdoors Inc.</title>
+		<script>
+			function showLightbox(imageName){
+				document.getElementById("lightbox-wrapper").style.display="block";
+				document.getElementById("img-container").style.backgroundImage = "url('images/gallery/" + imageName + "')";
+			}
+			function hideLightbox(){
+				document.getElementById("lightbox-wrapper").style.display="none";
+			}
+		</script>
+	</head>
+	<body>
+	<div id="lightbox-wrapper" onclick="hideLightbox();">
+		
+		<div id="lightbox-opaque"></div>
+		<div id="img-container"></div>
+	</div>
+		<div id="header-wrapper">
+			<div id="header-center">
+				<img src = "images/header-logo.webp" alt = "McNulty Outdoors Logo image">
+				<div id="contact-button-wrapper">
+					<div class="button-box"><a href="Contact.html">CONTACT US</a></div>
+					<div>516.352.1550</div>
+				</div>
+			</div>
+		</div>
+		<nav>
+	      <ul>
+	        <li><a href="index.html">Home</a></li>
+	        <li><a href="Story.html">Our Story</a></li>
+	        <li><a href="Services_Planters/Services.html">Services</a></li>
+	        <li><a href="Services_Planters/Planters.html">Planters</a></li>
+	        <li><a href="Gallery.html" class="selected_nav">Gallery</a></li>
+	        <li><a href="Awards.html">Awards</a></li>
+	        <li><a href="Contact.html">Contact</a></li>
+	        <li><a href="https://www.facebook.com/McNultyOutdoorsInc/">Facebook</a></li>
+	        <li><a href="https://www.instagram.com/McNultyOutdoors">Instagram</a></li>
+	        <li><a href="https://www.pinterest.com/McNultyOutdoors/">Pinterest</a></li>
+	      </ul>
+	    </nav>
+	    <div class="story"><h1>GALLERY========================================</h1></div>
+	    <div id="gallery-wrapper">
+	    	<div id="gallery">
+	    		<div onclick="showLightbox('berries.jpg')"><img src="images/gallery/berries.jpg" alt="Berries" /></div>
+	    		<div onclick="showLightbox('birch.jpg')"><img src="images/gallery/birch.jpg" alt="Birch tree" /></div>
+	    		<div onclick="showLightbox('buildingfront.jpg')"><img src="images/gallery/buildingfront.jpg" alt="Front of building" /></div>
+	    		<div onclick="showLightbox('centralpark.jpg')"><img src="images/gallery/centralpark.jpg" alt="Central Park Terrace view" /></div>
+	    		<div onclick="showLightbox('morewhitetwigs.jpg')"><img src="images/gallery/morewhitetwigs.jpg" alt="White twig design" /></div>
+	    		<div onclick="showLightbox('mums.jpg')"><img src="images/gallery/mums.jpg" alt="Mums in a garden" /></div>
+	    		<div onclick="showLightbox('pinkman.jpg')"><img src="images/gallery/pinkman.jpg" alt="Pink Art Sculpture" /></div>
+	    		<div onclick="showLightbox('terrace.jpg')"><img src="images/gallery/terrace.jpg" alt="Terrace design" /></div>
+	    		<div onclick="showLightbox('whitetwig.jpg')"><img src="images/gallery/whitetwig.jpg" alt="White Twig design" /></div>
+	    	</div>
+	    </div>
+	</body>
+</html>
+
